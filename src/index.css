@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: #FBFBFE;
+  --background: #081C15;
+  --paragraph: #495057;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #081C15;
+    --background: #FBFBFE;
+    --paragraph: #495057;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply px-4 mx-auto;
+    max-width: 100%;
+  }
+  
+  @screen sm {
+    .container {
+      max-width: 640px;
+    }
+  }
+  
+  @screen md {
+    .container {
+      max-width: 768px;
+    }
+  }
+  
+  @screen lg {
+    .container {
+      max-width: 1024px;
+    }
+  }
+  
+  @screen xl {
+    .container {
+      max-width: 1280px;
+    }
+  }
+}
