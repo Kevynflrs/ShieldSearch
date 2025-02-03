@@ -18,6 +18,10 @@
   }
 }
 
+body {
+  font-family: 'Itim-Regular', sans-serif;
+}
+
 @layer utilities {
   .container {
     @apply px-4 mx-auto;
@@ -53,6 +57,22 @@
   }
   
   .text-footer {
+    color: var(--footer-text);
+  }
+
+  .bg-navbar {
+    background-color: var(--footer-bg);
+  }
+  
+  .text-navbar {
+    color: var(--footer-text);
+  }
+
+  .bg-header {
+    background-color: var(--footer-bg);
+  }
+  
+  .text-header {
     color: var(--footer-text);
   }
 }
