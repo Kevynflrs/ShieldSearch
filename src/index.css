@@ -6,6 +6,8 @@
   --foreground: #FFFFFF;
   --background: #FFFFFF;
   --paragraph: #03045E;
+  --footer-bg: #0077B6;
+  --footer-text: #FFFFFF;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -44,5 +46,13 @@
     .container {
       max-width: 1280px;
     }
+  }
+  
+  .bg-footer {
+    background-color: var(--footer-bg);
+  }
+  
+  .text-footer {
+    color: var(--footer-text);
   }
 }
