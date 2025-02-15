@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Navbar from "../../../Components/Navbar/Navbar";
+import Navbar from '../../../Components/Navbar/Navbar';
 
 export default function Header() {
+  console.log('Header component rendered');
+
   return (
     <div className="relative">
       <Navbar />
